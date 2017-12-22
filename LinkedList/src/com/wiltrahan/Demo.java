@@ -9,17 +9,17 @@ public class Demo {
 
     public static void main(String[] args) {
         LinkedList<String> placesToVisit = new LinkedList<String>();
-        addInOrder(placesToVisit, "Sydney");
-        addInOrder(placesToVisit, "Melbourne");
-        addInOrder(placesToVisit, "Brisbane");
-        addInOrder(placesToVisit, "Perth");
-        addInOrder(placesToVisit, "Canberra");
-        addInOrder(placesToVisit, "Adelaide");
-        addInOrder(placesToVisit, "Darwin");
+        addInOrder(placesToVisit, "Fall River");
+        addInOrder(placesToVisit, "Somerset");
+        addInOrder(placesToVisit, "Swansea");
+        addInOrder(placesToVisit, "Seekonk");
+        addInOrder(placesToVisit, "East Providence");
+        addInOrder(placesToVisit, "Providence");
+        addInOrder(placesToVisit, "Pawtucket");
         printList(placesToVisit);
 
-        addInOrder(placesToVisit, "Alice Springs");
-        addInOrder(placesToVisit, "Darwin");
+        addInOrder(placesToVisit, "Central Falls");
+        addInOrder(placesToVisit, "Cranston");
         printList(placesToVisit);
         visit(placesToVisit);
     }
