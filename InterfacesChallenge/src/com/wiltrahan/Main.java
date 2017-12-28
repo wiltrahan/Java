@@ -16,6 +16,10 @@ public class Main {
         saveObject(wil);
         loadObject(wil);
         System.out.println(wil);
+
+        ISaveable werewolf = new Monster("Werewolf", 20, 40);
+        System.out.println(werewolf);
+        saveObject(werewolf);
     }
 
     public static ArrayList<String> readValues() {
