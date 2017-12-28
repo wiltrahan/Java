@@ -8,5 +8,11 @@ public class Main {
         wilsPhone.powerOn();
         wilsPhone.callPhone(123456);
         wilsPhone.answer();
+
+
+        wilsPhone = new MobilePhone(234567);
+        wilsPhone.powerOn();
+        wilsPhone.callPhone(234567);
+        wilsPhone.answer();
     }
 }
