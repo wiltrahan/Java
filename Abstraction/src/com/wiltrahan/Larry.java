@@ -6,8 +6,4 @@ public class Larry extends Bird {
         super(name);
     }
 
-    @Override
-    public void fly() {
-        System.out.println("Larry CAN Fly!");
-    }
 }
