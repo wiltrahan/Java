@@ -12,5 +12,10 @@ public class Main {
         System.out.println("Account for " + wilAccount.getCustomerName() + " has a balance of " + wilAccount.getBalance());
         wilAccount.withdrawal(19.00);
         wilAccount.withdrawal(200.00);
+
+        System.out.println("***************");
+
+        VIPCustomer frankie = new VIPCustomer("Frank N. Stein", 100000.00);
+        System.out.println(frankie.getName() + "\ncredit limit: $" + frankie.getCreditLimit() + "\nemail: " + frankie.getEmailAddress());
     }
 }
