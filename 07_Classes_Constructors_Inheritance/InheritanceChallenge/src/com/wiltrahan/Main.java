@@ -3,10 +3,9 @@ package com.wiltrahan;
 public class Main {
 
     public static void main(String[] args) {
-	    Outlander outlander = new Outlander(36);
-	    outlander.steer(45);
-	    outlander.accelerate(30);
-	    outlander.accelerate(20);
-	    outlander.accelerate(-42);
+		Tesla tesla = new Tesla("Black", 0, 4, 6, "TypeS", true);
+		tesla.accelerate(60);
+		tesla.changeSpeed(40);
+		tesla.stop();
     }
 }

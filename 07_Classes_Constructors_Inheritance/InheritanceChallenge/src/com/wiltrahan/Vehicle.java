@@ -1,66 +1,43 @@
 package com.wiltrahan;
 
 public class Vehicle {
+
     private String name;
-    private String size;
+    private String color;
+    private int wheels;
+    private int currentSpeed;
 
-    private int currentVelocity;
-    private int currentDirection;
 
-    public Vehicle(String name, String size) {
+    public Vehicle(String name, String color, int wheels) {
         this.name = name;
-        this.size = size;
-        this.currentVelocity = 0;
-        this.currentDirection = 0;
+        this.color = color;
+        this.wheels = wheels;
+        this.currentSpeed = 0;
     }
 
-    public void steer(int direction) {
-        this.currentDirection += direction;
-        System.out.println("Vehicle.steer(): Steering at " + currentDirection + " degrees.");
-    }
-
-    public void move(int velocity, int direction) {
-        currentVelocity = velocity;
-        currentDirection = direction;
-        System.out.println("Vehicle.move(): Moving at " + currentVelocity + " in direction " + currentDirection);
-
+    public void move(int speed) {
+        this.currentSpeed = speed;
+        System.out.println("Vehicle.move() called. " + "Vehicle is going " + this.currentSpeed + " mph.");
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getColor() {
+        return color;
     }
 
-    public String getSize() {
-        return size;
+    public int getWheels() {
+        return wheels;
     }
 
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public int getCurrentVelocity() {
-        return currentVelocity;
-    }
-
-    public void setCurrentVelocity(int currentVelocity) {
-        this.currentVelocity = currentVelocity;
-    }
-
-    public int getCurrentDirection() {
-        return currentDirection;
-    }
-
-    public void setCurrentDirection(int currentDirection) {
-        this.currentDirection = currentDirection;
+    public int getCurrentSpeed() {
+        return currentSpeed;
     }
 
     public void stop() {
-        this.currentVelocity = 0;
+        this.currentSpeed = 0;
+
     }
-
-
 }
