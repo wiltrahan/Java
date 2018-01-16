@@ -1,72 +1,75 @@
 package com.wiltrahan;
 
+import java.text.DecimalFormat;
+
 public class Hamburger {
+
     private String name;
     private String meat;
-    private double price;
-    private String breadRollType;
+    public double baseCost;
+    private String breadType;
 
-    private String addition1Name;
-    private double addition1Price;
+    private String addOn1;
+    private double addOn1Price;
 
-    private String addition2Name;
-    private double addition2Price;
+    private String addOn2;
+    private double addOn2Price;
 
-    private String addition3Name;
-    private double addition3Price;
+    private String addOn3;
+    private double addOn3Price;
 
-    private String addition4Name;
-    private double addition4Price;
+    private String addOn4;
+    private double addOn4Price;
 
-    public Hamburger(String name, String meat, double price, String breadRollType) {
+
+    public Hamburger(String name, String meat, double baseCost, String breadType) {
         this.name = name;
         this.meat = meat;
-        this.price = price;
-        this.breadRollType = breadRollType;
+        this.baseCost = 5.00;
+        this.breadType = breadType;
     }
 
-    public void addHamburgerAddition1(String name, double price) {
-        this.addition1Name = name;
-        this.addition1Price = price;
+    public void hamburgerAddOn1(String name, double price) {
+        this.addOn1 = name;
+        this.addOn1Price = price;
     }
 
-    public void addHamburgerAddition2(String name, double price) {
-        this.addition2Name = name;
-        this.addition2Price = price;
+    public void hamburgerAddOn2(String name, double price) {
+        this.addOn2 = name;
+        this.addOn2Price = price;
     }
 
-    public void addHamburgerAddition3(String name, double price) {
-        this.addition3Name = name;
-        this.addition3Price = price;
+    public void hamburgerAddOn3(String name, double price) {
+        this.addOn3 = name;
+        this.addOn3Price = price;
     }
 
-    public void addHamburgerAddition4(String name, double price) {
-        this.addition4Name = name;
-        this.addition4Price = price;
+    public void hamburgerAddOn4(String name, double price) {
+        this.addOn4 = name;
+        this.addOn4Price = price;
     }
 
-    public double itemizeHamburger() {
-        double hamburgerPrice = this.price;
-        System.out.println(this.name + " hamburger " + "on a " + this.breadRollType + " roll " + "price is " + this.price);
+    public void burgerTotalCost() {
+        DecimalFormat df1 = new DecimalFormat("$#.00");
+        DecimalFormat df2 = new DecimalFormat("#.00");
 
-        if(this.addition1Name != null) {
-            hamburgerPrice += this.addition1Price;
-            System.out.println("Added " + this.addition1Name + " for an extra " + this.addition1Price);
+        if(this.addOn1 != null) {
+            System.out.println(this.addOn1 + " added for an additional " + df2.format(this.addOn1Price));
+            baseCost += this.addOn1Price;
         }
-        if(this.addition2Name != null) {
-            hamburgerPrice += this.addition2Price;
-            System.out.println("Added " + this.addition2Name + " for an extra " + this.addition2Price);
+        if(this.addOn2 != null) {
+            System.out.println(this.addOn2 + " added for an additional " + df2.format(this.addOn2Price));
+            baseCost += this.addOn2Price;
         }
-        if(this.addition3Name != null) {
-            hamburgerPrice += this.addition3Price;
-            System.out.println("Added " + this.addition3Name + " for an extra " + this.addition3Price);
+        if(this.addOn3 != null) {
+            System.out.println(this.addOn3 + " added for an additional " + df2.format(this.addOn3Price));
+            baseCost += this.addOn3Price;
         }
-        if(this.addition4Name != null) {
-            hamburgerPrice += this.addition4Price;
-            System.out.println("Added " + this.addition1Name + " for an extra " + this.addition4Price);
+        if(this.addOn4 != null) {
+            System.out.println(this.addOn4 + " added for an additional " + df2.format(this.addOn4Price));
+            baseCost += this.addOn4Price;
         }
-
-        return hamburgerPrice;
+        System.out.println("Your Basic Burger total cost is: " + df1.format(this.baseCost));
 
     }
 

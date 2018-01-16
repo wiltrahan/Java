@@ -1,29 +1,21 @@
 package com.wiltrahan;
 
 public class DeluxeBurger extends Hamburger {
-    public DeluxeBurger() {
-        super("Deluxe", "Sausage & Bacon", 14.54, "White");
-        super.addHamburgerAddition1("Chips", 2.75);
-        super.addHamburgerAddition2("Drink", 1.81);
+
+    private String chipType;
+    private String drink;
+
+    public DeluxeBurger(String name, String breadType, String chipType, String drink) {
+        super(name, "Pounder", 8.00, breadType);
+        this.chipType = chipType;
+        this.drink = drink;
     }
 
-    @Override
-    public void addHamburgerAddition1(String name, double price) {
-        System.out.println("Cannot add additional items to deluxe burger");
+    public void deluxeTotal() {
+        System.out.println("You added " + this.chipType + " chips and " + this.drink + "\n" +
+                        "Your Deluxe Burger total is $10.00");
+
     }
 
-    @Override
-    public void addHamburgerAddition2(String name, double price) {
-        System.out.println("Cannot add additional items to deluxe burger");
-    }
 
-    @Override
-    public void addHamburgerAddition3(String name, double price) {
-        System.out.println("Cannot add additional items to deluxe burger");
-    }
-
-    @Override
-    public void addHamburgerAddition4(String name, double price) {
-        System.out.println("Cannot add additional items to deluxe burger");
-    }
 }

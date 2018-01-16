@@ -1,39 +1,44 @@
 package com.wiltrahan;
 
+import java.text.DecimalFormat;
+
 public class HealthyBurger extends Hamburger {
 
-    private String healthyExtra1Name;
-    private double healthyExtra1price;
-
-    private String healthyExtra2Name;
-    private double healthyExtra2price;
-
-    public HealthyBurger(String meat, double price) {
-        super("Healthy", meat, price, "Brown Rye");
+    public HealthyBurger(String name) {
+        super(name, "Black Bean", 6.00, "Brown Rye");
     }
 
-    public void addHealthAddition1(String name, double price) {
-        this.healthyExtra1Name = name;
-        this.healthyExtra1price = price;
+    private String healthyItemOne;
+    public double healthyItemOneCost;
+
+    private String healthyItemTwo;
+    public double healthyItemTwoCost;
+
+    public void addHealthy1(String name, double price) {
+        this.healthyItemOne = name;
+        this.healthyItemOneCost = price;
     }
 
-    public void addHealthAddition2(String name, double price) {
-        this.healthyExtra2Name = name;
-        this.healthyExtra2price = price;
+    public void addHealthy2(String name, double price) {
+        this.healthyItemTwo = name;
+        this.healthyItemTwoCost = price;
     }
 
-    @Override
-    public double itemizeHamburger() {
-        double hamburgerPrice = super.itemizeHamburger();
-        if (this.healthyExtra1Name != null) {
-            hamburgerPrice += this.healthyExtra1price;
-            System.out.println("Added " + this.healthyExtra1Name + " for an extra " + this.healthyExtra1price);
+    public void healthyTotal() {
+        DecimalFormat df1 = new DecimalFormat("$#.00");
+
+        if(this.healthyItemOne != null) {
+            System.out.println(this.healthyItemOne + " added for an additional " + df1.format(this.healthyItemOneCost));
+            baseCost += this.healthyItemOneCost;
         }
-        if (this.healthyExtra2Name != null) {
-            hamburgerPrice += this.healthyExtra2price;
-            System.out.println("Added " + this.healthyExtra2Name + " for an extra " + this.healthyExtra2price);
+        if(this.healthyItemTwo != null) {
+            System.out.println(this.healthyItemTwo + " added for an additional " + df1.format(this.healthyItemTwoCost));
+            baseCost += this.healthyItemOneCost;
         }
-        return hamburgerPrice;
 
+        System.out.println("Your Healthy Burger total is: " + df1.format(this.baseCost));
     }
+
+
+
 }
