@@ -46,10 +46,16 @@ public class Printer {
     }
 
     public String getTotalCost() {
+        DecimalFormat df1 = new DecimalFormat("#.00");
+        DecimalFormat df2 = new DecimalFormat("$#.00");
         totalCost = pagesPrinted * 0.10;
-        DecimalFormat df2 = new DecimalFormat("#.00");
 
+        if(pagesPrinted <= 9) {
+            return df1.format(totalCost);
+        }
         return df2.format(totalCost);
+
+
     }
 
     public int getPagesPrinted() {
