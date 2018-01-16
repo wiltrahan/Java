@@ -1,10 +1,14 @@
 package com.wiltrahan;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
 public class Printer {
 
     private int tonerLevel;
     private int pagesPrinted;
     private boolean duplex;
+    public double totalCost;
 
     public Printer(int tonerLevel, boolean duplex) {
         if (tonerLevel > -1 && tonerLevel <= 100) {
@@ -36,10 +40,17 @@ public class Printer {
             pagesToPrint /= 2;
             System.out.println("Printing in duplex mode");
         }
+
         this.pagesPrinted += pagesToPrint;
         return pagesToPrint;
     }
 
+    public String getTotalCost() {
+        totalCost = pagesPrinted * 0.10;
+        DecimalFormat df2 = new DecimalFormat("#.00");
+
+        return df2.format(totalCost);
+    }
 
     public int getPagesPrinted() {
         return pagesPrinted;
