@@ -25,6 +25,7 @@ public class HealthyBurger extends Hamburger {
     }
 
     public void healthyTotal() {
+
         DecimalFormat df1 = new DecimalFormat("$#.00");
 
         if(this.healthyItemOne != null) {
@@ -36,9 +37,6 @@ public class HealthyBurger extends Hamburger {
             baseCost += this.healthyItemOneCost;
         }
 
-        System.out.println("Your Healthy Burger total is: " + df1.format(this.baseCost));
+        System.out.println(this.name.toUpperCase() + " total is: " + df1.format(this.baseCost));
     }
-
-
-
 }

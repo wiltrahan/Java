@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 public class Hamburger {
 
-    private String name;
+    public String name;
     private String meat;
     public double baseCost;
     private String breadType;
@@ -25,7 +25,7 @@ public class Hamburger {
     public Hamburger(String name, String meat, double baseCost, String breadType) {
         this.name = name;
         this.meat = meat;
-        this.baseCost = 5.00;
+        this.baseCost = baseCost;
         this.breadType = breadType;
     }
 
@@ -69,9 +69,7 @@ public class Hamburger {
             System.out.println(this.addOn4 + " added for an additional " + df2.format(this.addOn4Price));
             baseCost += this.addOn4Price;
         }
-        System.out.println("Your Basic Burger total cost is: " + df1.format(this.baseCost));
+        System.out.println(this.name.toUpperCase() + " total is: " + df1.format(this.baseCost));
 
     }
-
-
 }
