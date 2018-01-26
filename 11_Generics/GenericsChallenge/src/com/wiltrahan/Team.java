@@ -1,6 +1,8 @@
 package com.wiltrahan;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Team<T extends League> {
 
@@ -22,7 +24,7 @@ public class Team<T extends League> {
             return false;
         } else {
             teams.add(team);
-            System.out.println("The " + team.getName() + " have been added successfully to the " + this.name);
+            System.out.println("The " + team.getName() + " have been successfully added to the " + this.name);
             return true;
         }
     }
@@ -30,4 +32,6 @@ public class Team<T extends League> {
     public int numTeams() {
         return this.teams.size();
     }
+
+
 }

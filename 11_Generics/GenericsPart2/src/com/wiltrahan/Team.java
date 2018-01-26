@@ -69,4 +69,6 @@ public class Team<T extends Player> implements Comparable<Team<T>> {
             return 0;
         }
     }
+
+
 }

@@ -4,23 +4,38 @@ public class Main {
 
     public static void main(String[] args) {
         NFL giants = new NFL("New York Giants");
-        NFL patriots = new NFL("New England Patriots");
+        NFL eagles = new NFL("Philadelphia Eagles");
+        NFL cowboys = new NFL("Dallas Cowboys");
+        NFL redskins = new NFL("Washington Redskins");
 
-        NBA celtics = new NBA("Boston Celtics");
-        NBA spurs = new NBA("San Antonio Spurs");
+        NFL patriots = new NFL("New England Patriots");
+        NFL jets = new NFL("New York Jets");
+        NFL bills = new NFL("Buffalo Bills");
+        NFL dolphins = new NFL("Miami Dolphins");
+
+//        NBA celtics = new NBA("Boston Celtics");
+//        NBA spurs = new NBA("San Antonio Spurs");
 
         Team<NFL> NFC = new Team<>("NFC");
         Team<NFL> AFC = new Team<>("AFC");
         NFC.addTeam(giants);
-        AFC.addTeam(patriots);
+        NFC.addTeam(eagles);
+        NFC.addTeam(cowboys);
+        NFC.addTeam(redskins);
 
         System.out.println("\n");
 
-        Team<NBA> west = new Team<>("Western Conference");
-        Team<NBA> east = new Team<>("Eastern Conference");
-        west.addTeam(spurs);
-        east.addTeam(celtics);
-
         AFC.addTeam(patriots);
+        AFC.addTeam(jets);
+        AFC.addTeam(bills);
+        AFC.addTeam(dolphins);
+
+
+//        Team<NBA> west = new Team<>("Western Conference");
+//        Team<NBA> east = new Team<>("Eastern Conference");
+//        west.addTeam(spurs);
+//        east.addTeam(celtics);
+
+
     }
 }
