@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67286e89-4413-445f-84c1-8c6df830afca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericsChallenge/out/production/GenericsChallenge/com/wiltrahan/Main.class" afterPath="$PROJECT_DIR$/../GenericsChallenge/out/production/GenericsChallenge/com/wiltrahan/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericsChallenge/out/production/GenericsChallenge/com/wiltrahan/Team.class" afterPath="$PROJECT_DIR$/../GenericsChallenge/out/production/GenericsChallenge/com/wiltrahan/Team.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericsChallenge/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GenericsChallenge/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericsChallenge/src/com/wiltrahan/Main.java" afterPath="$PROJECT_DIR$/../GenericsChallenge/src/com/wiltrahan/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericsChallenge/src/com/wiltrahan/Team.java" afterPath="$PROJECT_DIR$/../GenericsChallenge/src/com/wiltrahan/Team.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wiltrahan/Team.java" afterPath="$PROJECT_DIR$/src/com/wiltrahan/Team.java" />
-    </list>
+    <list default="true" id="67286e89-4413-445f-84c1-8c6df830afca" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -213,7 +206,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="23" width="987" height="824" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -221,7 +213,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3821734" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
