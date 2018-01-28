@@ -1,8 +1,6 @@
 package com.wiltrahan;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -47,13 +45,24 @@ public class Main {
             }
             System.out.println();
 
-            String direction = scanner.nextLine().toUpperCase();
+            String[] direction = scanner.nextLine().toUpperCase().split(" ");
 
-            if(exits.containsKey(direction)) {
-                loc = exits.get(direction);
+            List<String> directionList = Arrays.asList(direction);
+
+            if(directionList.contains("EAST") || directionList.contains("E")) {
+                loc = exits.get("E");
+            } else if(directionList.contains("WEST") || directionList.contains("W")) {
+                loc = exits.get("W");
+            } else if(directionList.contains("NORTH") || directionList.contains("N")) {
+                loc = exits.get("N");
+            } else if(directionList.contains("SOUTH") || directionList.contains("S")) {
+                loc = exits.get("S");
+            } else if(directionList.contains("QUIT") || directionList.contains("Q")) {
+                loc = exits.get("Q");
             } else {
                 System.out.println("You cannot go in that direction");
             }
+
         }
     }
 }
