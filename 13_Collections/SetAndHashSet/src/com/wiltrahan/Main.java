@@ -102,6 +102,9 @@ public class Main {
             System.out.println(planet.getName() + ": " + planet.getOrbitalPeriod());
         }
 
+        Object o = new Object();
+        o.equals(o);
+        "pluto".equals("");
 
     }
 }
