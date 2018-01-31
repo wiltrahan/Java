@@ -43,7 +43,7 @@ public class StockItem implements Comparable<StockItem> {
         }
     }
 
-    public int reservedStock(int quantity) {
+    public int reserveStock(int quantity) {
         if(quantity <= availableQuantity()) {
             reserved += quantity;
             return quantity;
@@ -106,4 +106,5 @@ public class StockItem implements Comparable<StockItem> {
     public String toString() {
         return this.name + " : price " + this.price + ". Reserved: " + this.reserved;
     }
+
 }
